@@ -1,0 +1,87 @@
+body {
+  background: var(--bg);
+  font-family: var(--pf);
+  transition: var(--transition);
+  border-bottom: 10px solid var(--clr-element);
+}
+.title {
+  font-family: var(--pf);
+  color: var(--clr-text);
+  font-weight: 800;
+  font-size: 2.5rem;
+  .
+  .
+}
+.box {
+  padding: 2rem;
+  border: 2px solid var(--clr-element);
+  border-radius: 5px;
+  color: var(--clr-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background: var(--bg-light);
+  box-shadow: 0 2px 10px var(--clr-shadow);
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all .2s;
+}
+
+
+.dd-icon {
+  stroke: var(--clr-text);
+}
+.dd-theme__switcher {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.dd-theme__switcher .dd-theme__switcher-btn {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  top: 0;
+}
+body.light .dd-theme__switcher .dd-theme__switcher-btn {
+  top: -24px;
+}
+.theme--label {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--clr-element);
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.theme--label span {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+.theme--label[dd-theme="solarized"] span {
+  background: #002b36;
+}
+.theme--label[dd-theme="pt"] span {
+  background: #5cbdb9;
+}
+.theme--label[dd-theme="blue"] span {
+  background: #7ebcff;
+}
+.theme--label[dd-theme="yp"] span {
+  background: #7d3cff;
+}
+.theme--label[dd-theme].active {
+  color: var(--bg);
+  background: var(--clr-element);
+}
+.theme--label[dd-theme].active span { background: var(--bg); }

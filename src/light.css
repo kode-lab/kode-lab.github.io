@@ -1,0 +1,9 @@
+.light, body[color-theme="light"] {
+  --bg: #f0f8ff;
+  --bg-light: rgba(255, 255, 255, .8);
+  --clr-text: #182227;
+  --clr-text-light: #182227bb;
+  --clr-element: #34506e;
+  --clr-element-hover: #34506ebb;
+  --clr-shadow: rgba(0, 0, 0, .15);
+}
